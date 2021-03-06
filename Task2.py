@@ -5,7 +5,7 @@ from collections import Counter
 # если нельзя будет выбрать три случайных слова, также все слова сводятся к нижнему регистру, возможно использование
 # текста как кириллического, так и латиницы
 def top_duplicates(k=3):
-    texted = input("Enter your text: ")
+    texted = input("Введите ваш текст: ")
     punc_signs = '''!()-[]{};:"\,<>./?@#$%^&*_~'''
     for ele in texted:
         if ele in punc_signs:

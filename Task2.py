@@ -6,7 +6,7 @@ from collections import Counter
 # текста как кириллического, так и латиницы
 def top_duplicates(k=3):
     texted = input("Enter your text: ")
-    punc_signs = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+    punc_signs = '''!()-[]{};:"\,<>./?@#$%^&*_~'''
     for ele in texted:
         if ele in punc_signs:
             texted = texted.replace(ele, "")

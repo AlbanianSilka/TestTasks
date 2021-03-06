@@ -12,7 +12,6 @@ def top_duplicates(k=3):
             texted = texted.replace(ele, "")
 
     user_list = list(texted.split(" "))
-    print(user_list)
     total_count = Counter(user_list)
     num_duplicates = sum(1 for x in total_count if total_count[x] > 1)
     if num_duplicates < 3:
